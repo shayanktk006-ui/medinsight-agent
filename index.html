@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Report Explainer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <div class="brand">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+  </svg>
+  <h1>Report Explainer</h1>
+</div>
+  <p class="sub">Upload your report, ask a question — by voice or text</p>
+  <div class="card">
+    <div class="drop" id="drop">📄 Drop your PDF report here, or click</div>
+    <input type="file" id="fileInput" accept=".pdf">
+    <div class="qrow">
+      <input id="question" type="text" placeholder="e.g. is my cholesterol normal?">
+      <button class="mic" id="micBtn">🎤</button>
+    </div>
+    <button class="ask" id="askBtn">Explain it</button>
+  </div>
+  <div class="answer" id="answerBox">
+    <button class="speak" id="speakBtn">🔊 Listen</button>
+    <div id="answerText"></div>
+  </div>
+  <footer>Built by Muhammad Shayan Khurshid</footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
